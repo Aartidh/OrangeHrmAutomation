@@ -5,9 +5,7 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
-
 import javax.annotation.Nonnull;
-
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterGroups;
@@ -53,13 +51,6 @@ public class NewTest extends baseClass {
 		Assert.assertTrue(driver.findElement(By.id("menu_dashboard_index")).isDisplayed());
 		
 		logger.info("successfully able to login to application");
-
-	}
-	
-	
-	
-	
-	
 	
 
 	/*
@@ -88,4 +79,23 @@ public class NewTest extends baseClass {
 	 * }
 	 */
 
+}
+  @Test(groups={"Sanity","Regression"})
+  public void Sample() {
+	  
+	  System.out.println("Hello Sample method............");
+	  
+  }
+  
+  @Test(groups="Regression")
+  public void M1()
+  {
+	  System.out.println("Hello m1 method................");
+  }
+  
+  @Test
+  public void M2()
+  {
+	  System.out.println("..........in m2");
+  }
 }

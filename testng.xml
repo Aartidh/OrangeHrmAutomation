@@ -9,5 +9,4 @@
 			<class name="com.hrm.automation.NewTest"></class>
 		</classes>
 	</test> <!-- Test -->
-
 </suite> <!-- Suite -->
